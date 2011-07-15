@@ -1,0 +1,74 @@
+body {
+	margin: 0px auto;
+	padding: 0px;
+	width: 800px;
+	background: #d2d2d2;
+	font: 80% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+
+a, strong { color: #f7831e; }
+
+#bounce-box {
+	position: relative;
+	top: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#show_drop {
+	float: right;
+	margin: 0px 10px 10px 0px;
+}
+
+#content {
+	position: relative;
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	text-align: justify;
+	color: #000000;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: -1px;
+	background: #ffffff;
+}
+
+pre {
+	border: 1px solid #d2d2d2;
+	background: #f1f1f1;
+}
+
+#drop_down {
+	/* Set the Hozontal placement ans style of the dropped container */
+	position: absolute;
+	top: -1000px;
+	margin: 0px 0px 0px 50%;
+	padding: 0px;
+	left: -250px;
+	width: 500px;
+	z-index: 5000;
+}
+
+.drop_container {
+	float: left;
+	width: 500px;
+	background: transparent url('../images/orange.png') repeat left top;
+}
+
+.drop_content {
+	float: left;
+	margin: 10px;
+	padding: 10px 10px;
+	width: 460px;
+	background: #f7831e;
+}
+
+
+#drop_close {
+	float: right;
+	position: relative;
+	top: -20px;
+	right: -20px;
+	margin: 0px;
+	z-index: 5000;
+}

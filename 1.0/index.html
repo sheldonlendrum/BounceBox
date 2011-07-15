@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>BounceBox Mootools Javascript Class by Sheldon Lendrum</title>
+	
+	
+	<!--  BOUNCE BOX BY SHELDON LENDRUM  -->
+	<link rel="stylesheet" href="assets/css/bounceBox.css" type="text/css" media="screen" />
+	<script src="assets/js/mootools-1-1.2.1-core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/bounceBox-1-0.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		window.addEvent('domready', function(){
+		
+			new bounceBox({showOnLoad: true, overlay: true, position: 'center'});
+		
+		});
+	</script>
+	<!-- END BOUNCE BOX  -->
+	
+</head>
+
+<body>
+
+	<img src="assets/images/bounceBox.gif" alt="BounceBox JS Effects Class" id="bounce-box" />
+	
+	
+	
+	<!-- POPULATION CONTENT -->
+	<div id="content">
+		
+		<img src="assets/images/demo.gif" alt="DEMO" id="show_drop" />
+		<p>A simple JS class to display a sliding box with a nice tranisiton and with/out an overlay layer.</p>
+		<p>This Class requires no CSS styles other that cosmetic formatting, and can be called via DOM READY or an Event. If the BounceBox is open,  then your <strong>ESC</strong> key will close the BounceBox.</p>
+		<p><strong>Click the DEMO Image to preview the example.</strong>  and you can <a href="#download">Download the code</a> below.</p>
+		
+		<h3>Usage</h3>
+<pre>
+&lt;script src="assets/js/mootools-1-1.2.1-core.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="assets/js/bounceBox-1-0.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" charset="utf-8"&gt;
+new bounceBox({
+		showOnLoad: false,          // show BounceBox on DOM READY
+		overlay: false,             // Show overlay with BounceBox
+		position: 0,                // INT height of box or 'center'
+		containerId: 'drop_down',   // BounceBox Container ID
+		actionId: 'show_drop',      // Action Trigger ID
+		closeId: 'drop_close',      // Action Close ID
+		opacity: .8,                // Overlay Opacity
+		colour: '#222222',          // Overlay Colour
+		transition: 'bounce:out',   // BoucneBox Transitions
+		duration: 2500              // BoucneBox Transition Speed
+});
+&lt;/script&gt;
+</pre>
+
+		<h3>Mootools BounceBox Class</h3>
+		<p>This Class uses <a href="http://www.mootools.net/" target="_blank">Mootools</a> 1.2 Core with the following modules.</p>
+		<ul>
+			<li>Core
+			<ul>
+				<li>Core</li>
+				<li>Browser	</li>
+			</ul>
+			</li>
+			<li>Native
+			<ul>
+				<li>Array</li>
+				<li>Function</li>
+				<li>Number</li>
+				<li>String</li>
+				<li>Hash</li>
+				<li>Event</li>
+			</ul>
+			</li>
+			<li>Class
+			<ul>
+				<li>Class</li>
+				<li>Class.Extras</li>
+			</ul>
+			</li>
+			<li>Element
+			<ul>
+				<li>Element</li>
+				<li>Element.Event</li>
+				<li>Element.Style</li>
+				<li>Element.Dimensions</li>
+			</ul>
+			</li>
+			<li>Utilities
+			<ul>
+				<li>Selectors</li>
+				<li>DomReady</li>
+			</ul>
+			</li>
+			<li>Fx
+			<ul>
+				<li>Fx</li>
+				<li>Fx.CSS</li>
+				<li>Fx.Tween</li>
+				<li>Fx.Morph</li>
+				<li>Fx.Transitions</li>
+			</ul>
+			</li>
+		</ul>
+	
+	
+		<h3 id="download">BounceBox Code</h3>
+		
+		<p>This code is free to use,  if you have any questions post them on my <a href="http://sheldon.lendrum.co.nz">Blog: http://sheldon.lendrum.co.nz</a></p>
+		
+		<div id="dl-icon"><a href="">Download Version 1.0</a>
+	
+	</div>
+
+
+
+	
+	<!--  
+		Copy the containing DIV 'drop_down' from the bottom of this file,  
+		Place it just before your </body> tag ( of GA script ) to ensure 
+		that it has the highest z-index and appears on top.
+	
+		You can add any amount of content or images to the Div and the JS 
+		will calculate the size and drop position automatically. 
+	-->
+	
+	
+	
+	<div id="drop_down">
+		<div class="drop_container">
+			<div class="drop_content">
+				
+				<div id="drop_close"><img src="assets/images/close.png" alt="Close" border="0" /></div>
+				
+				<h1>BounceBox JS Class</h1>
+				<p>A simple JS class to display a sliding box with a nice transition and with/out an overlay layer.</p>
+				<p>This Class requires no CSS styles other that cosmetic formatting, and can be called via DOM READY or an Event.</p>
+				<p>Click the 'DEMO Image' to show this box again.</p>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
